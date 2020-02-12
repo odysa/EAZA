@@ -7,7 +7,18 @@ Page({
   data: {
 
   },
-
+  get_course : function(){
+    wx.cloud.callFunction({
+      name: 'order_course',
+      data: {
+        a:1
+      }
+    })
+    .then(res => {
+      console.log(res.result)
+    })
+    .catch(console.error);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
