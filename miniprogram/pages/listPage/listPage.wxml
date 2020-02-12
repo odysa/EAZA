@@ -1,0 +1,6 @@
+<wux-wing-blank size="default">
+  <wux-card title="MATH 234" extra="A率90%" thumb="https://cdn.skyvow.cn/logo.png">
+    <view slot="body">Intro to Calculus</view>
+    <view slot="footer"></view>
+  </wux-card>
+</wux-wing-blank>

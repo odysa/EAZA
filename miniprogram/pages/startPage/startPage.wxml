@@ -1,0 +1,63 @@
+<!--pages/startPage/startPage.wxml-->
+<van-search 
+  placeholder="Please enter course key word" 
+  value="{{ value }}" 
+  background="#aa0000"
+/>
+<van-notice-bar
+  mode="closeable"
+  color = "red"
+  backgroundColor = "#ffdddd"
+  text="此版本为beta测试版，因此可能出现各种神秘bug。各位可以发送至bucunzai@cnm.com"
+/>
+<van-grid clickable column-num="4" squre>
+  <van-grid-item 
+    icon="shengwuzhiyao" 
+    text="BIOLOGY"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"  
+  />
+  <van-grid-item
+    icon="wuli" 
+    text="PHYSICS"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"    
+  />
+  <van-grid-item 
+    icon="shu" 
+    text="LITRATURE"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"   
+  />
+  <van-grid-item 
+    icon="iconrenzhong" 
+    text="ETHNIC"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"   
+  />
+  <van-grid-item 
+    icon="shehui" 
+    text="SOCIAL"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"   
+  />
+  <van-grid-item 
+    icon="ziranfengguang" 
+    text="NATURAL"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"   
+  />
+  <van-grid-item 
+    icon="shehui1" 
+    text="HUMANITIES"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"   
+  />
+    <van-grid-item 
+    icon="jiaoliu" 
+    text="COMMONB"
+    link-type="navigateTo"
+    url="/pages/listPage/listPage"   
+  />
+</van-grid>
+
