@@ -1,0 +1,11 @@
+var filter = {
+  numberToPercent: function (value) {
+    value = value*100;
+    var str = value.toFixed(1);
+    str+="%";
+    return str
+  }
+}
+module.exports = {
+  numberToPercent: filter.numberToPercent
+}

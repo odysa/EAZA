@@ -1,1 +1,2 @@
 /* miniprogram/pages/listPage/listPage.wxss */
+@import '../../miniprogram_npm/wux-weapp/styles/index.wxss';

@@ -6,14 +6,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    //value: event.detail
+    value: ''
   },
-
+  findit : function(){
+    wx.cloud.callFunction({
+      name: 'sum',
+      data:{
+      }
+    }).then(res =>{
+      console.log(res.result.sum)
+    }).catch(console.error)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //this.findit()
   },
 
   /**
@@ -63,5 +71,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onSearch: function(){
+    input = this.data.value
+    input.split(' ')
+    
   }
 })

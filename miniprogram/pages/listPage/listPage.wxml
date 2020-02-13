@@ -1,6 +1,20 @@
-<wux-wing-blank size="default">
-  <wux-card title="MATH 234" extra="A率90%" thumb="https://cdn.skyvow.cn/logo.png">
-    <view slot="body">Intro to Calculus</view>
+<wxs module="num">
+  var numberToPercent=function (value) {
+    value = value*100;
+    var str = value.toFixed(1);
+    str+="%";
+    return str
+  }
+  module.exports.per = numberToPercent
+</wxs>
+<style src="./listPage.wxss"/>
+<view style="height:20rpx"></view>
+
+<view wx:for="{{course_list}}" wx:key="index">
+<wux-wing-blank  class="wux-light--bg" size="default">
+  <wux-card  class="wux-light--bg" actions="{{ actions }}" bind:action="onAction" title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}">
+    <view class="wux-text--center" slot="body">{{item.full_name}}</view>
     <view slot="footer"></view>
   </wux-card>
 </wux-wing-blank>
+</view>

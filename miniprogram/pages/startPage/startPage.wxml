@@ -1,8 +1,11 @@
 <!--pages/startPage/startPage.wxml-->
+
 <van-search 
   placeholder="Please enter course key word" 
   value="{{ value }}" 
   background="#aa0000"
+  bind:search="onSearch"
+  bind:cancel="onCancel"
 />
 <van-notice-bar
   mode="closeable"
@@ -10,54 +13,54 @@
   backgroundColor = "#ffdddd"
   text="此版本为beta测试版，因此可能出现各种神秘bug。各位可以发送至bucunzai@cnm.com"
 />
-<van-grid clickable column-num="4" squre>
+<van-grid clickable column-num="2" squre>
   <van-grid-item 
     icon="shengwuzhiyao" 
     text="BIOLOGY"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"  
+    url="/pages/listPage/listPage?subject=bio"  
   />
   <van-grid-item
     icon="wuli" 
     text="PHYSICS"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"    
+    url="/pages/listPage/listPage?subject=physics"    
   />
   <van-grid-item 
     icon="shu" 
     text="LITRATURE"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"   
+    url="/pages/listPage/listPage?subject=lit"   
   />
   <van-grid-item 
     icon="iconrenzhong" 
     text="ETHNIC"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"   
+    url="/pages/listPage/listPage?subject=ethnic"   
   />
   <van-grid-item 
     icon="shehui" 
     text="SOCIAL"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"   
+    url="/pages/listPage/listPage?subject=social"   
   />
   <van-grid-item 
     icon="ziranfengguang" 
     text="NATURAL"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"   
+    url="/pages/listPage/listPage?subject=nature"   
   />
   <van-grid-item 
     icon="shehui1" 
     text="HUMANITIES"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"   
+    url="/pages/listPage/listPage?subject=human"   
   />
     <van-grid-item 
     icon="jiaoliu" 
     text="COMMONB"
     link-type="navigateTo"
-    url="/pages/listPage/listPage"   
+    url="/pages/listPage/listPage?subject=commonb"   
   />
 </van-grid>
 

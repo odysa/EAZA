@@ -5,17 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    course_list : [],
+    subject : 'No',
+    actions: [{
+      type: 'primary',
+      text: '了解更多'
+    }]
   },
   get_course : function(){
     wx.cloud.callFunction({
       name: 'order_course',
       data: {
-        a:1
+        course_name : this.data.subject
       }
     })
     .then(res => {
-      console.log(res.result)
+      this.setData({
+        course_list: res.result.data
+      })
     })
     .catch(console.error);
   },
@@ -23,7 +30,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //console.log(options.subject)
+    this.setData({
+      subject: options.subject
+    })
+    //console.log(this.data.subject)
+    this.get_course()
   },
 
   /**
