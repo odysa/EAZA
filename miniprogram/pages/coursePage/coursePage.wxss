@@ -1,0 +1,19 @@
+/* pages/coursePage/coursePage.wxss */
+
+.van-circle--primary {
+  align-items: center;
+  justify-content: center;
+}
+.text_align{
+width: 350rpx;
+height: 350rpx;
+background-color: gray;
+text-align: center; /** 水平居中 **/
+align-items: center;
+justify-content: center;
+}
+.center{
+  text-align: center!important;
+  margin: 20px;
+}
+
