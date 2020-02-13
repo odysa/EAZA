@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  height: 600rpx;
+  width: 800rpx;
+  background-color: transparent;
 } 
 
 button {

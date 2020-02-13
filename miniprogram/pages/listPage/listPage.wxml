@@ -8,12 +8,13 @@
   module.exports.per = numberToPercent
 </wxs>
 <style src="./listPage.wxss"/>
+
 <view style="height:20rpx"></view>
 
 <view wx:for="{{course_list}}" wx:key="index">
 <wux-wing-blank  class="wux-light--bg" size="default">
-  <wux-card  style="color:#4c4a59" actions="{{ actions }}" bind:action="onAction" title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}">
-    <view class="wux-text--center" slot="body" style="font-size:40rpx">{{item.full_name}}</view>
+  <wux-card  data-id='{{item.course_uuid}}' bindtap='jump'   title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}">
+    <view class="wux-text--center"  slot="body" style="font-size:40rpx">{{item.full_name}}</view>
     <view slot="footer"></view>
   </wux-card>
 </wux-wing-blank>

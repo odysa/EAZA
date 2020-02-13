@@ -6,11 +6,14 @@ Page({
    */
   data: {
     course_list : [],
-    subject : 'No',
-    actions: [{
-      type: 'primary',
-      text: '了解更多'
-    }]
+    subject : 'No'
+  },
+  jump : function(event){
+    console.log(event.currentTarget.dataset.id)
+    var course_id = event.currentTarget.dataset.id
+    wx.redirectTo({
+      url: `../coursePage/coursePage?id=${course_id}`,
+    })
   },
   get_course : function(){
     wx.cloud.callFunction({
