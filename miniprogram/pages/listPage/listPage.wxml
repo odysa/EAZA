@@ -8,6 +8,13 @@
   module.exports.per = numberToPercent
 </wxs>
 <style src="./listPage.wxss"/>
+<van-search 
+  placeholder="Please enter course key word" 
+  value="{{ value }}" 
+  background="#9c26b0"
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
 
 <view style="height:20rpx"></view>
 <view wx:for="{{course_list}}" wx:key="index">
