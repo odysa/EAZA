@@ -12,9 +12,13 @@
 
 <view wx:for="{{course_list}}" wx:key="index">
 <wux-wing-blank  class="wux-light--bg" size="default">
-  <wux-card  style="color:#4c4a59" actions="{{ actions }}" bind:action="onAction" title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}">
+  <van-grid column-num="1" border="{{ true }}" clickable >
+  <van-grid-item use-slot link-type="navigateTo" url="/pages/coursePage/coursePage?abbreviation={{item.abbreviation}}&subject_code={{item.number}}" gutter="{{ 10 }}">
+    <wux-card  full = "{{false}}" style="color:#4c4a59" title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}" bordered = "{{false}}">
     <view class="wux-text--center" slot="body" style="font-size:40rpx">{{item.full_name}}</view>
     <view slot="footer"></view>
   </wux-card>
+  </van-grid-item>
+</van-grid>
 </wux-wing-blank>
 </view>
