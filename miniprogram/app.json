@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/coursePage/coursePage",
+    
     "pages/startPage/startPage",
-    "pages/listPage/listPage"
+    "pages/listPage/listPage",
+    "pages/coursePage/coursePage"
     
   ],
   "window": {
