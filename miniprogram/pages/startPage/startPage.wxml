@@ -3,7 +3,7 @@
 <van-search 
   placeholder="Please enter course key word" 
   value="{{ value }}" 
-  background="#aa0000"
+  background="#9c26b0"
   bind:search="onSearch"
   bind:cancel="onCancel"
 />
@@ -11,7 +11,7 @@
   mode="closeable"
   color = "red"
   backgroundColor = "#ffdddd"
-  text="此版本为beta测试版，因此可能出现各种神秘bug。各位可以发送至bucunzai@cnm.com"
+  text="此版本为beta测试版，因此可能出现各种神秘bug。各位可以发送至cbian7@wisc.edu"
 />
 <van-grid clickable column-num="2" squre>
   <van-grid-item 
@@ -63,4 +63,6 @@
     url="/pages/listPage/listPage?subject=commonb"   
   />
 </van-grid>
-
+<view style="height:40rpx"></view>
+<van-divider contentPosition="center" textColor="#1989fa">敬请期待</van-divider>
+<van-button custom-style="position:fixed;bottom:0;" type="primary" size="large"color="linear-gradient(45deg, #ec008c, #6739b6)" block>GitHub</van-button>

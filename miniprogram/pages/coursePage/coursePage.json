@@ -1,4 +1,7 @@
 {
+  "navigationBarBackgroundColor": "#9c26b0",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "课程详情",
   "usingComponents": {
     "ec-canvas": "../../ec-canvas/ec-canvas"
   }

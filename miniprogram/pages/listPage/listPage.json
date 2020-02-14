@@ -1,9 +1,9 @@
 {
-  "navigationBarTitleText": "课程详情",
+  "navigationBarTitleText": "课程列表",
   "usingComponents": {
     "wux-card": "../../miniprogram_npm/wux-weapp/card/index",
     "wux-wing-blank": "../../miniprogram_npm/wux-weapp/wing-blank/index"
   },
-  "navigationBarBackgroundColor": "#aa0000",
+  "navigationBarBackgroundColor": "#9c26b0",
   "backgroundColor": "#aaaaaa"
 }

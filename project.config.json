@@ -27,7 +27,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.1",
 	"appid": "wx197613ef2e018021",
-	"projectname": "EasA",
+	"projectname": "EAZA",
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
@@ -38,6 +38,8 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

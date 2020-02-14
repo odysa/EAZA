@@ -11,7 +11,7 @@ Page({
   jump : function(event){
     console.log(event.currentTarget.dataset.id)
     var course_id = event.currentTarget.dataset.id
-    wx.redirectTo({
+    wx.navigateTo({
       url: `../coursePage/coursePage?id=${course_id}`,
     })
   },

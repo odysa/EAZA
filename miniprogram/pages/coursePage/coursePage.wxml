@@ -1,4 +1,14 @@
 <!--miniprogram/pages/coursePage/coursePage.wxml-->
+<view style="height:250rpx;background-color: #e7ebed">
+<view style="height:30rpx"></view>
+<view style="text-align:center; font-size: 50rpx">{{abb}} {{num}}</view>
+<view style="height:30rpx"></view>
+<view style="text-align:center; font-size: 30rpx font-color:#aaaaaa">{{full_name}}</view>
+
+</view>
+<van-divider contentPosition="center" textColor="#1989fa">更多功能正在开发中</van-divider>
 <view class="container">
   <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
 </view>
+
+<van-button custom-style="position:fixed;bottom:0;" type="primary" size="large"color="linear-gradient(45deg, #ec008c, #6739b6)" block>这课我爱了,加进选课Cart</van-button>

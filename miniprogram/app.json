@@ -7,7 +7,7 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#9c26b0",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
@@ -17,7 +17,15 @@
     "van-notice-bar": "miniprogram_npm/@vant/weapp/notice-bar/index",
     "van-grid": "miniprogram_npm/@vant/weapp/grid/index",
     "van-grid-item": "miniprogram_npm/@vant/weapp/grid-item/index",
-    "van-card": "miniprogram_npm/@vant/weapp/card/index"
+    "van-card": "miniprogram_npm/@vant/weapp/card/index",
+    "van-nav-bar": "miniprogram_npm/@vant/weapp/nav-bar/index",
+    "van-row": "miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "miniprogram_npm/@vant/weapp/col/index",
+    "wux-wing-blank": "miniprogram_npm/wux-weapp/wing-blank/index",
+    "wux-white-space": "miniprogram_npm/wux-weapp/white-space/index",
+    "van-divider": "miniprogram_npm/@vant/weapp/divider/index",
+    "van-loading": "miniprogram_npm/@vant/weapp/loading/index",
+    "wux-spin": "miniprogram_npm/wux-weapp/spin/index"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,7 +1,7 @@
 <wxs module="num">
   var numberToPercent=function (value) {
-    value = value*100;
-    var str = value.toFixed(1);
+    value = value*100
+    var str = value.toFixed(0);
     str+="%";
     return str
   }
@@ -10,12 +10,12 @@
 <style src="./listPage.wxss"/>
 
 <view style="height:20rpx"></view>
-
 <view wx:for="{{course_list}}" wx:key="index">
 <wux-wing-blank  class="wux-light--bg" size="default">
-  <wux-card  data-id='{{item.course_uuid}}' bindtap='jump'   title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}">
-    <view class="wux-text--center"  slot="body" style="font-size:40rpx">{{item.full_name}}</view>
+  <wux-card  data-id='{{item.course_uuid}}' class="text-gray" bindtap='jump'   title="{{item.abbreviation}} {{item.number}}" extra="综合A率 {{num.per(item.course_tot)}}">
+    <view class="wux-text--center" class="text-black" slot="body" style="font-size:30rpx">{{item.full_name}}</view>
     <view slot="footer"></view>
   </wux-card>
 </wux-wing-blank>
 </view>
+<van-divider contentPosition="center" textColor="#1989fa">我是有底线的</van-divider>

@@ -1,2 +1,8 @@
 /* miniprogram/pages/listPage/listPage.wxss */
 @import '../../miniprogram_npm/wux-weapp/styles/index.wxss';
+page{
+  background-color: linear-gradient(45deg, #0081ff, #1cbbb4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
