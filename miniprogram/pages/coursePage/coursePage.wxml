@@ -1,9 +1,16 @@
 <!--miniprogram/pages/coursePage/coursePage.wxml-->
-<view style="height:250rpx;background-color: #e7ebed">
+<van-search 
+  placeholder="Please enter course key word" 
+  value="{{ value }}" 
+  background="#9c26b0"
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+<view style="height:215rpx;background-color: #9c26b0">
 <view style="height:30rpx"></view>
-<view style="text-align:center; font-size: 50rpx">{{abb}} {{num}}</view>
+<view style="text-align:center; font-size: 50rpx" class = "headerA">{{abb}} {{num}}</view>
 <view style="height:30rpx"></view>
-<view style="text-align:center; font-size: 30rpx font-color:#aaaaaa">{{full_name}}</view>
+<view style="text-align:center; font-size: 30rpx font-color:#ffffff" class="headerB">{{full_name}}</view>
 
 </view>
 <van-divider contentPosition="center" textColor="#1989fa">更多功能正在开发中</van-divider>

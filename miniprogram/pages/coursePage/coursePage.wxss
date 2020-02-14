@@ -3,3 +3,22 @@ ec-canvas {
   height: 100%;
   background-color: transparent;
 }
+.headerA{
+/*background-color: #9c26b0;*/
+font-size: 50rpx;
+text-align: center!important;
+color: white;
+margin: 5px;
+
+}
+.headerB{
+/*background-color: #9c26b0;*/
+font-size: 30rpx;
+text-align: center!important;
+color: white;
+margin: 0px;
+}
+.sexyColor{
+  color:"linear-gradient(45deg, #ec008c, #6739b6)";
+  background-color:"linear-gradient(45deg, #ec008c, #6739b6)";
+}
